@@ -9,7 +9,7 @@ function MenuItem({ pizza }) {
       <img
         src={imageUrl}
         alt={name}
-        className={`h-24 ${soldOut ? "opacity-70 grayscale" : ""}`}
+        className={`h-24 ${soldOut ? "opacity-90 grayscale" : ""}`}
       />
       <div className="flex grow flex-col pt-0.5">
         <p className="font-medium">{name}</p>
@@ -24,7 +24,7 @@ function MenuItem({ pizza }) {
               Sold out
             </p>
           )}
-          <Button type="small">Add to cart</Button>
+          {!soldOut && <Button type="small">Add to cart</Button>}
         </div>
       </div>
     </li>
