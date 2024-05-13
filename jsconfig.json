@@ -1,1 +1,7 @@
-{ "checkjs": true }
+// {
+//   "compilerOptions": {
+//     "baseUrl": "./src",
+//     "checkJs": true,
+//     "jsx": "react-jsx"
+//   }
+// }

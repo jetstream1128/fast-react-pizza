@@ -24,7 +24,11 @@ function MenuItem({ pizza }) {
               Sold out
             </p>
           )}
-          {!soldOut && <Button type="small">Add to cart</Button>}
+          {!soldOut && (
+            <Button type="small" disabled={undefined} to={undefined}>
+              Add to cart
+            </Button>
+          )}
         </div>
       </div>
     </li>
